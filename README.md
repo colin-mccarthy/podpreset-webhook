@@ -33,6 +33,7 @@ The webserver supporting the webhook needs to be deployed to a namespace. By def
 Install the manifests to deploy the webhook webserver by executing the following commands:
 
 ```
+export PROJECT_NAME="sample"
 $ kubectl apply -f deploy/crds/redhatcop_v1alpha1_podpreset_crd.yaml
 $ kubectl apply -f deploy/service_account.yaml
 $ kubectl apply -f deploy/clusterrole.yaml
