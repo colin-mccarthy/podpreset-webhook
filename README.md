@@ -35,6 +35,7 @@ Install the manifests to deploy the webhook webserver by executing the following
 ```
 export PROJECT_NAME="sample"
 $ kubectl apply -f deploy/crds/redhatcop_v1alpha1_podpreset_crd.yaml
+$ kubectl apply -f deploy/namespace.yaml
 $ kubectl apply -f deploy/service_account.yaml
 $ kubectl apply -f deploy/clusterrole.yaml
 $ kubectl apply -f deploy/cluster_role_binding.yaml
