@@ -4,7 +4,7 @@ metadata:
   name: podpreset-webhook
   namespace: ${PROJECT_NAME}
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       name: podpreset-webhook
