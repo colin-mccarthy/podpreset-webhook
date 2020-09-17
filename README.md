@@ -33,7 +33,6 @@ The webserver supporting the webhook needs to be deployed to a namespace. By def
 Install the manifests to deploy the webhook webserver by executing the following commands:
 
 ```
-export PROJECT_NAME="sample"
 $ kubectl apply -f deploy/crds/redhatcop_v1alpha1_podpreset_crd.yaml
 $ kubectl apply -f deploy/namespace.yaml
 $ kubectl apply -f deploy/service_account.yaml
@@ -47,6 +46,12 @@ $ kubectl apply -f deploy/configmap.yaml
 $ kubectl apply -f deploy/podpreset.yaml
 $ kubectl apply -f deploy/welcome-php-deployment.yaml
 ```
+
+## sed
+
+sudo sed -i -e 's/colintest/<your project/namespace>/g'  deploy/namespace.yaml 
+
+
 
 ## Example
 

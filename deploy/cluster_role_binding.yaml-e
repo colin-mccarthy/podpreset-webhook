@@ -5,7 +5,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: podpreset-webhook
-    namespace: colintest
+    namespace: ${PROJECT_NAME}
 roleRef:
   kind: ClusterRole
   name: podpreset-webhook

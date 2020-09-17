@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: welcome-php
-  namespace: colintest
+  namespace: ${PROJECT_NAME}
 spec:
   replicas: 1
   selector:
