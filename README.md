@@ -41,6 +41,9 @@ $ kubectl apply -f deploy/role.yaml
 $ kubectl apply -f deploy/role_binding.yaml
 $ kubectl apply -f deploy/secret.yaml
 $ kubectl apply -f deploy/webhook.yaml
+$ kubectl apply -f deploy/configmap.yaml
+$ kubectl apply -f deploy/podpreset.yaml
+$ kubectl apply -f deploy/welcome-php-deployment.yaml
 ```
 
 ## Example
