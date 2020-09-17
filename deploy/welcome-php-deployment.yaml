@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: welcome-php
-  namespace: podpreset-webhook
+  namespace: ${PROJECT_NAME}
 spec:
   replicas: 1
   selector:
