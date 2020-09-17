@@ -2,6 +2,7 @@ apiVersion: redhatcop.redhat.io/v1alpha1
 kind: PodPreset
 metadata:
   name: frontend
+  namespace: ${PROJECT_NAME}
 spec:
   env:
     - name: CA_CONTENTS
